@@ -95,8 +95,11 @@ body {
   border-top: 2px solid var(--color-purple-light);
 }
 .box-answer {
+  opacity: 1;
+  overflow: hidden;
   font-size: var(--font-sm);
   margin-bottom: 2rem;
+  transition: all 0.3s;
 }
 .box-icon {
   fill: var(--color-purple-light-2);
@@ -112,5 +115,9 @@ body {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.3s;
 }/*# sourceMappingURL=style.css.map */

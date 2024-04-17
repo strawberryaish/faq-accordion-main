@@ -116,9 +116,15 @@ body {
     }
 
     &-answer {
+        opacity: 1;
+        overflow: hidden;
         font-size: var(--font-sm);
         margin-bottom: 2rem;
+        transition: all 0.3s;
+
     }
+
+
 
     &-icon {
         fill: var(--color-purple-light-2);
@@ -140,5 +146,11 @@ body {
 
 // hide div
 .hidden {
-    display: none;
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.3s;
+    
+
 }
