@@ -94,7 +94,7 @@ body {
 }
 
 .box {
-    &-questions {
+    &-question {
         font-size: var(--font-md);
         color: var(--color-purple-dark);
         display: flex;
@@ -110,12 +110,12 @@ body {
         }
     }
 
-    &-questions:not(:nth-child(1)) {
+    &-question:not(:nth-child(1)) {
         padding-top: 1.5rem;
         border-top: 2px solid var(--color-purple-light);
     }
 
-    &-answers {
+    &-answer {
         font-size: var(--font-sm);
         margin-bottom: 2rem;
     }
@@ -128,7 +128,7 @@ body {
             fill: var(--color-purple-grayish);
             cursor: pointer;
             
-         &-questions {
+         &-question {
                 color: var(--color-purple-grayish);
                 cursor: pointer;
                 

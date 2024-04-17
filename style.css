@@ -77,7 +77,7 @@ body {
   height: 3rem;
 }
 
-.box-questions {
+.box-question {
   font-size: var(--font-md);
   color: var(--color-purple-dark);
   display: flex;
@@ -86,15 +86,15 @@ body {
   margin-bottom: 2rem;
   transition: 0.3s all;
 }
-.box-questions:hover {
+.box-question:hover {
   color: var(--color-purple-grayish);
   cursor: pointer;
 }
-.box-questions:not(:nth-child(1)) {
+.box-question:not(:nth-child(1)) {
   padding-top: 1.5rem;
   border-top: 2px solid var(--color-purple-light);
 }
-.box-answers {
+.box-answer {
   font-size: var(--font-sm);
   margin-bottom: 2rem;
 }
@@ -106,7 +106,7 @@ body {
   fill: var(--color-purple-grayish);
   cursor: pointer;
 }
-.box-icon:hover-questions {
+.box-icon:hover-question {
   color: var(--color-purple-grayish);
   cursor: pointer;
 }
