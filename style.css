@@ -1,0 +1,116 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: WorkSans;
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+  font-style: normal;
+}
+:root {
+  --white: hsl(0, 0%, 100%);
+  --color-pink: hsl(275, 100%, 97%);
+  --color-purple-grayish: hsl(292, 16%, 49%);
+  --color-purple-dark: hsl(292, 42%, 14%);
+  --color-purple-light: #f6eef9;
+  --color-purple-light-2: #AD28EB;
+  --transparent-purple-dark: hsla(292, 38%, 45%, 0.382);
+  --font-bg: 5rem;
+  --font-md: 1.8rem;
+  --font-sm: 1.6rem;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: WorkSans, sans-serif;
+  background-color: var(--color-purple-light);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-img {
+  width: 100%;
+  position: relative;
+}
+.container-img svg {
+  z-index: 1;
+  width: 100%;
+}
+
+.accordion {
+  max-width: 70rem;
+  padding: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: var(--white);
+  box-shadow: var(--transparent-purple-dark) 0px 3px 20px;
+  border-radius: 11px;
+}
+.accordion-title {
+  color: var(--color-purple-dark);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.accordion-title-text {
+  font-size: var(--font-bg);
+}
+.accordion-title-svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.box-questions {
+  font-size: var(--font-md);
+  color: var(--color-purple-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  transition: 0.3s all;
+}
+.box-questions:hover {
+  color: var(--color-purple-grayish);
+  cursor: pointer;
+}
+.box-questions:not(:nth-child(1)) {
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--color-purple-light);
+}
+.box-answers {
+  font-size: var(--font-sm);
+  margin-bottom: 2rem;
+}
+.box-icon {
+  fill: var(--color-purple-light-2);
+  transition: 0.3s all;
+}
+.box-icon:hover {
+  fill: var(--color-purple-grayish);
+  cursor: pointer;
+}
+.box-icon:hover-questions {
+  color: var(--color-purple-grayish);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
