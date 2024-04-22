@@ -178,16 +178,22 @@ body {
            gap: 2.2rem;
         }
 
-        &:hover {
-            color: var(--color-purple-grayish);
-            cursor: pointer;
+       
+
+        &:not(:nth-child(1)) {
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--color-purple-light);
+        }
+
+        &-title {
+            &:hover {
+                color: var(--color-purple-grayish);
+                cursor: pointer;
+            }
         }
     }
 
-    &-question:not(:nth-child(1)) {
-        padding-top: 1.5rem;
-        border-top: 2px solid var(--color-purple-light);
-    }
+   
 
     &-answer {
         opacity: 1;

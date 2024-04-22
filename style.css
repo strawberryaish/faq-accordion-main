@@ -157,13 +157,13 @@ body {
     gap: 2.2rem;
   }
 }
-.box-question:hover {
-  color: var(--color-purple-grayish);
-  cursor: pointer;
-}
 .box-question:not(:nth-child(1)) {
   padding-top: 1.5rem;
   border-top: 2px solid var(--color-purple-light);
+}
+.box-question-title:hover {
+  color: var(--color-purple-grayish);
+  cursor: pointer;
 }
 .box-answer {
   opacity: 1;
