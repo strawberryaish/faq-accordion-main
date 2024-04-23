@@ -109,14 +109,14 @@ body {
 }
 @media screen and (max-width: 500px) {
   .accordion {
-    width: 40rem !important;
+    width: 36rem !important;
     top: 50%;
     padding: 3rem;
   }
 }
 @media screen and (max-width: 375px) {
   .accordion {
-    width: 33rem !important;
+    width: 30rem !important;
     top: 45%;
     padding: 2.5rem;
   }
@@ -151,6 +151,10 @@ body {
   margin-bottom: 2rem;
   transition: 0.3s all;
   gap: 1rem;
+  cursor: pointer;
+}
+.box-question:hover {
+  color: var(--color-purple-grayish);
 }
 @media screen and (max-width: 375px) {
   .box-question {
@@ -159,14 +163,9 @@ body {
 }
 .box-question:not(:nth-child(1)) {
   padding-top: 1.5rem;
-  border-top: 2px solid var(--color-purple-light);
-}
-.box-question-title:hover {
-  color: var(--color-purple-grayish);
-  cursor: pointer;
+  border-top: 1px solid var(--color-purple-light);
 }
 .box-answer {
-  opacity: 1;
   overflow: hidden;
   font-size: var(--font-sm);
   color: var(--color-purple-grayish);
@@ -204,13 +203,10 @@ body {
 }
 .box-icon:hover-question {
   color: var(--color-purple-grayish);
-  cursor: pointer;
 }
-
-.hidden {
+.box .hidden {
   opacity: 0;
   height: 0;
-  visibility: hidden;
   overflow: hidden;
   transition: all 0.3s;
 }/*# sourceMappingURL=style.css.map */
