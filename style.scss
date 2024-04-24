@@ -36,16 +36,16 @@
 
 @media screen and (max-width: 500px) {
   :root {
-    --font-bg: 4.5rem;
-    --font-md: 1.6rem;
-    --font-sm: 1.4rem;
+    --font-bg: 4rem;
+    --font-md: 1.4rem;
+    --font-sm: 1.2rem;
   }
 
 @media screen and (max-width: 375px) {
   :root {
     --font-bg: 3.5rem;
-    --font-md: 1.4rem;
-    --font-sm: 1.2rem;
+    // --font-md: 1.4rem;
+    // --font-sm: 1.2rem;
   }
 }
 }   }
@@ -116,7 +116,7 @@ body {
     border-radius: 11px;
 
     @media screen and (max-width: 980px) {
-     width: 80rem!important;
+     width: 70rem!important;
      top: 45%;
        }
 
@@ -126,9 +126,9 @@ body {
     
        }   
 
-    @media screen and (max-width: 500px) {
-     width: 36rem!important;
-     top: 50%;
+    @media screen and (max-width: 520px) {
+     width: 30rem!important;
+     top: 40%;
      padding: 3rem;
     }
 

@@ -1,7 +1,6 @@
-
 const iconBtns = document.querySelectorAll('.box-icon');
 const answers = document.querySelectorAll('.box-answer');
-const questions = document.querySelectorAll('.box-question');
+const box = document.querySelector('.box');
 
 const toggleAnswer = function(clickedQuestion) {
     const icon = clickedQuestion.lastElementChild;
@@ -20,13 +19,9 @@ const toggleAnswer = function(clickedQuestion) {
         icon.setAttribute('src', 'assets/images/icon-minus.svg');
     }}
 
-
-questions.forEach(function(box) {
-    box.addEventListener('click', clicked => {
+box.addEventListener('click', clicked => {
     const clickedQuestion = clicked.target.closest('.box-question');
 
-    if (clickedQuestion){
-        toggleAnswer(clickedQuestion);
-    }
-})});
-
+    if (!clickedQuestion) return;
+    toggleAnswer(clickedQuestion);
+})
