@@ -174,7 +174,9 @@ body {
         transition: 0.3s all;
         gap: 1rem;
         cursor: pointer;
-
+        -webkit-tap-highlight-color: transparent;
+        tap-highlight-color: transparent;
+       
         &:hover {
             color: var(--color-purple-grayish);
 
